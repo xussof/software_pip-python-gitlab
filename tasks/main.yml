@@ -1,0 +1,7 @@
+---
+- name: Installing python-gitlab packages using pip
+  become: true
+  pip:
+    name: "python-gitlab"
+    state: present
+    executable: pip3
